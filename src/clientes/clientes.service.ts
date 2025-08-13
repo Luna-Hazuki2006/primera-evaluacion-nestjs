@@ -32,7 +32,7 @@ export class ClientesService {
     async actualizar(id : number, cliente : ClienteActualizarDto) {
         const real = await this.repo.findOneBy({ id: id })
         if (real) {
-            return await this.repo.save({... real, ...cliente});
+            return await this.repo.save({...real, ...cliente});
         }
         throw new NotFoundException('No se encontró el cliente')
     }
