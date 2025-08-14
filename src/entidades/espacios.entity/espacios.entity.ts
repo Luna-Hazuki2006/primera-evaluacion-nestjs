@@ -7,19 +7,22 @@ import {
 } from 'typeorm';
 
 @Entity()
-export class ClienteEntity {
+export class EspaciosEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column('text')
   nombre: string;
 
+  @Column('boolean')
+  espacioso: boolean;
+
   @Column('text')
-  email: string;
+  info: string;
 
   @CreateDateColumn()
-  created_at: Date;
+  registrado: Date;
 
   @UpdateDateColumn()
-  updated_at: Date;
+  modificado: Date;
 }

@@ -7,19 +7,19 @@ import {
 } from 'typeorm';
 
 @Entity()
-export class ClienteEntity {
+export class ReservasEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column('text')
-  nombre: string;
+  ocupador: string;
 
-  @Column('text')
-  email: string;
+  @Column('integer')
+  espacio: number;
 
   @CreateDateColumn()
-  created_at: Date;
+  registrado: Date;
 
   @UpdateDateColumn()
-  updated_at: Date;
+  modificado: Date;
 }
