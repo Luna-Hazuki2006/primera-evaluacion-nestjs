@@ -1,4 +1,4 @@
-import { IsInt, isInt, IsNotEmpty, IsString } from 'class-validator';
+import { IsInt, IsNotEmpty, IsString } from 'class-validator';
 
 export class Reservas {
   @IsNotEmpty()

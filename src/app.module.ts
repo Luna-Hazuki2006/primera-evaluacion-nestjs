@@ -6,6 +6,7 @@ import { ClientesModule } from './clientes/clientes.module';
 import { EspaciosModule } from './espacios/espacios.module';
 import { UsuariosModule } from './usuarios/usuarios.module';
 import { ReservasModule } from './reservas/reservas.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { ReservasModule } from './reservas/reservas.module';
     UsuariosModule,
     EspaciosModule,
     ReservasModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],

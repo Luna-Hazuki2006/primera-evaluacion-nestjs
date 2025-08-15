@@ -23,6 +23,12 @@ export class UsuariosEntity {
   @Column('text')
   sobreTi: string;
 
+  @Column('text')
+  contraseña: string;
+
+  @Column('text')
+  tipo_usuario: string;
+
   @CreateDateColumn()
   registrado: Date;
 

@@ -1,4 +1,9 @@
-import { IsDate, IsDateString, IsNotEmpty, IsString } from 'class-validator';
+import {
+  IsDateString,
+  IsNotEmpty,
+  IsString,
+  IsStrongPassword,
+} from 'class-validator';
 
 export class Usuarios {
   @IsNotEmpty()
@@ -19,4 +24,13 @@ export class Usuarios {
 
   @IsString()
   sobreTi: string;
+
+  @IsNotEmpty()
+  @IsString()
+  @IsStrongPassword()
+  contraseña: string;
+
+  @IsNotEmpty()
+  @IsString()
+  tipo_usuario: string;
 }

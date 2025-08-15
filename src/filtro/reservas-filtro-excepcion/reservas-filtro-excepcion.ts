@@ -21,7 +21,7 @@ export class ReservasFiltroExcepcion implements ExceptionFilter {
       mensaje: exception.message,
       ruta: request.url,
       momento: new Date().toISOString(),
-      modulo: 'reservas',
+      // modulo: 'reservas',
     });
   }
 }
